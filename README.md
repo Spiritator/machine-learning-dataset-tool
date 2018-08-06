@@ -1,3 +1,3 @@
-# machine-learning-dataset-tool
+# Machine learning dataset tool
 
 Tools for DNN dataset download and object detection data format translation
