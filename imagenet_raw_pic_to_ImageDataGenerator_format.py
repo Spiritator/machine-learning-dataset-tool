@@ -32,7 +32,7 @@ pic_file_list=os.listdir(dir+'ILSVRC2012_img_val')
 
 count=0
 for key in class_mapping.keys():
-    os.system('mkdir imagenet_val_imagedatagenerator\%s' % class_mapping[key])
+    os.system('mkdir imagenet_val_imagedatagenerator\%s' % str(key)+'_'+class_mapping[key])
     count=count+1
     print('foleder created %d/%d'%(count,1000))
     
@@ -41,3 +41,6 @@ for i in range(len(ground_truth)):
     os.system('copy ILSVRC2012_img_val\%s imagenet_val_imagedatagenerator\%s' % (pic_file_list[i],class_mapping[ground_truth[i]]))
     count=count+1
     print('picture copied %d/%d'%(count,50000))
+
+
+    
