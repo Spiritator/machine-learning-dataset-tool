@@ -21,7 +21,7 @@ with open(dir + '/train-annotations-human-imagelabels.csv', newline='') as csvfi
             continue #Avoid downloading one image many times for the image which contains multiple target classes
         if bbox[2] in class_id_list:
             idx=class_id_list.index(bbox[2])
-            if class_count[idx]>=num_train:
+            if class_count[idx]>=num_train or bbox[3]!='1':
                 continue
             else:
                 tmp = bbox[0]
@@ -42,7 +42,7 @@ with open(dir + '/validation-annotations-human-imagelabels.csv', newline='') as 
             continue #Avoid downloading one image many times for the image which contains multiple target classes
         if bbox[2] in class_id_list:
             idx=class_id_list.index(bbox[2])
-            if class_count[idx]>=num_validation:
+            if class_count[idx]>=num_validation or bbox[3]!='1':
                 continue
             else:
                 tmp = bbox[0]
@@ -63,7 +63,7 @@ with open(dir + '/test-annotations-human-imagelabels.csv', newline='') as csvfil
             continue #Avoid downloading one image many times for the image which contains multiple target classes
         if bbox[2] in class_id_list:
             idx=class_id_list.index(bbox[2])
-            if class_count[idx]>=num_test:
+            if class_count[idx]>=num_test or bbox[3]!='1':
                 continue
             else:
                 tmp = bbox[0]
