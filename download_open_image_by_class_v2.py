@@ -2,11 +2,11 @@ import csv
 import os, sys
 
 dir = sys.path[0]
-class_name_list=['person'   ,'elephant'  ,'pizza'   ,'armadillo','tiger'   ,'dolphin' ,'centipede','sheep'   ,'bear'    ,'frog'    ,'rabbit'  ,'sword'   ,'eagle'   ,'rose'    ,'hippo'   ,'airplane','spider'  ,'ladybug' ,'lobster' ,'alpaca' ]
-class_id_list=  ['/m/01g317','/m/0bwd_0j','/m/0663v','/m/0xfy'  ,'/m/07dm6','/m/02hj4','/m/019h78','/m/07bgp','/m/01dws','/m/09ld4','/m/06mf6','/m/06y5r','/m/09csl','/m/06m11','/m/09f20','/m/0cmf2','/m/09kmb','/m/0gj37','/m/0cjq5','/m/0pcr']
-num_train=5 #2000
-num_validation=5 #200
-num_test=2 #100
+class_name_list=['tomato'  ,'elephant'  ,'pizza'   ,'armadillo','tiger'   ,'dolphin' ,'centipede','sheep'   ,'bear'    ,'frog'    ,'rabbit'  ,'sword'   ,'eagle'   ,'rose'    ,'hippo'   ,'airplane','spider'  ,'ladybug' ,'lobster' ,'alpaca' ]
+class_id_list=  ['/m/07j87','/m/0bwd_0j','/m/0663v','/m/0xfy'  ,'/m/07dm6','/m/02hj4','/m/019h78','/m/07bgp','/m/01dws','/m/09ld4','/m/06mf6','/m/06y5r','/m/09csl','/m/06m11','/m/09f20','/m/0cmf2','/m/09kmb','/m/0gj37','/m/0cjq5','/m/0pcr']
+num_train=2000
+num_validation=200
+num_test=100
 tmp = []
 
 class_item=dict(zip(class_id_list, class_name_list))
